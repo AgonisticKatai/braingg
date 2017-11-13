@@ -1,0 +1,44 @@
+doctype html
+html(lang='en-ca')
+  head
+    meta(charset='utf-8')
+    title
+    include styles
+  body
+    .container
+    h1.text-center Players
+    form.form.container(action='/', method='POST')
+        .form-group
+            label(for='name') Name:
+            input.form-control(type='text', name='name')
+        .form-group
+            label(for='age') Age:
+            input.form-control(type='number', name='age')
+        .form-group
+            label(for='location') Location:
+            input.form-control(type='text', name='location')
+        .form-group
+            label(for='nickname') Nickname:
+            input.form-control(type='text', name='nickname')
+        .form-group
+            label(for='twitter') Twitter:
+            input.form-control(type='text', name='twitter')
+        .form-group
+            label(for='role') Role:
+            input.form-control(type='text', name='role')
+        span.input-btn
+            button.btn.btn-primary(type='submit') Add Player!
+    each player in players
+        ul.list-group
+        .container
+            li.list-group-item Name: #{player.name}
+            li.list-group-item Age: #{player.age}
+            li.list-group-item Twitter: #{player.twitter}
+            li.list-group-item Location: #{player.location}
+            li.list-group-item Role: #{player.role}
+            button.btn.btn-primary.btn-md.edit-task
+                i.glyphicon.glyphicon-pencil
+            .actions.pull-right
+                button.btn.btn-danger.btn-md.remove-player(data-id=player.id)
+                    i.glyphicon.glyphicon-trash
+    include scripts
