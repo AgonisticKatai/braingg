@@ -3,13 +3,13 @@ $('.remove-player').on('click', function(e) {
 
   const id = $liContainer.context.dataset.id
 
-  const url = `/${id}`
+  const url = `/players/${id}`
   const method = 'DELETE'
 
   $.ajax({ url, method})
     .then( () => {
     	console.log('pressed button')
-    	window.location.href='/'
+    	window.location.href='/players'
     })
 })
 
