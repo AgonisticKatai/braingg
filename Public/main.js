@@ -12,3 +12,4 @@ $('.remove-player').on('click', function(e) {
     	window.location.href='/'
     })
 })
+

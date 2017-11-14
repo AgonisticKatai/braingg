@@ -1,0 +1,13 @@
+each player in players
+    ul.list-group
+    .container
+        li.list-group-item Name: #{player.name}
+        li.list-group-item Age: #{player.age}
+        li.list-group-item Twitter: #{player.twitter}
+        li.list-group-item Location: #{player.location}
+        li.list-group-item Role: #{player.role}
+        button.btn.btn-primary.btn-md.edit-task
+            i.glyphicon.glyphicon-pencil
+        .actions.pull-right
+            button.btn.btn-danger.btn-md.remove-player(data-id=player.id)
+                i.glyphicon.glyphicon-trash
