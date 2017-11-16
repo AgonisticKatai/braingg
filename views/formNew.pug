@@ -1,0 +1,20 @@
+extends index
+
+block content
+    .container
+        h1.text-center News
+        form.form.container(action='/news', method='POST')
+            .form-group
+                label(for='title') Title:
+                input.form-control(type='text', name='title')
+            .form-group
+                label(for='intro') Intro:
+                input.form-control(type='text', name='intro')
+            .form-group
+                label(for='img') Image:
+                input.form-control(type='text', name='img')
+            .form-group
+                label(for='body') Body:
+                textarea.form-control(rows='5', type='text', name='body')
+            span.input-btn
+                button.btn.btn-primary(type='submit') Add News!

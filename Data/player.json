@@ -7,7 +7,8 @@
 		"location": "Vilanova i la Geltrú",
 		"twitter": "@polescalera",
 		"role": "Support",
-		"id": 1
+		"id": 1,
+		"squad": "overwatch"
 	},
 	{
 		"name": "Roger",
@@ -17,7 +18,8 @@
 		"location": "Barcelona",
 		"twitter": "@roger",
 		"role": "Dps",
-		"id": 2
+		"id": 2,
+		"squad": "overwatch"
 	},
 	{
 		"name": "Marcos",
@@ -27,7 +29,8 @@
 		"location": "Malaga",
 		"twitter": "@Jio",
 		"role": "Support",
-		"id": 3
+		"id": 3,
+		"squad": "overwatch"
 	},
 	{
 		"name": "Ismael",
@@ -37,6 +40,29 @@
 		"location": "Malaga",
 		"twitter": "@twofreak",
 		"role": "Tank",
-		"id": 4
+		"id": 4,
+		"squad": "overwatch"
+	},
+	{
+		"name": "Paco",
+		"age": 18,
+		"img": "./reference/default-user.png",
+		"nickname": "Jio",
+		"location": "Malaga",
+		"twitter": "@Jio",
+		"role": "Support",
+		"id": 5,
+		"squad": "csgo"
+	},
+	{
+		"name": "Antonio",
+		"age": 18,
+		"img": "./reference/default-user.png",
+		"nickname": "Kozifo",
+		"location": "Malaga",
+		"twitter": "@twofreak",
+		"role": "Tank",
+		"id": 6,
+		"squad": "csgo"
 	}
 ]

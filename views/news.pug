@@ -1,0 +1,13 @@
+extends index
+
+block content
+    each item in news
+        ul.list-group
+        .container
+            li.list-group-item Title: #{item.title}
+            li.list-group-item Intro: #{item.intro}
+            li.list-group-item Img: #{item.img}
+            li.list-group-item Body: #{item.body}
+            .actions.pull-right
+                button.btn.btn-danger.btn-md.remove-player(data-id=item.id)
+                    i.glyphicon.glyphicon-trash

@@ -4,12 +4,7 @@ block content
 	.jumbotron
 		h1 Squads
 	.row
-		.col-md-6
-			a(href="/players").btn.btn-danger.btn-lg.visible-lg-block CSGO
-		.col-md-6
-			a(href="/players").btn.btn-danger.btn-lg.visible-lg-block OVERWATCH
-		.col-md-6
-			a(href="/players").btn.btn-danger.btn-lg.visible-lg-block LOL
-		.col-md-6
-			a(href="/players").btn.btn-danger.btn-lg.visible-lg-block PUBG
+		each squad in eachSquad
+			.col-md-6
+				a(href=`/squads/${squad}`).btn.btn-danger.btn-lg.visible-lg-block #{squad.toUpperCase()}
 

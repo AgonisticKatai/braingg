@@ -6,8 +6,7 @@ each player in players
         li.list-group-item Twitter: #{player.twitter}
         li.list-group-item Location: #{player.location}
         li.list-group-item Role: #{player.role}
-        button.btn.btn-primary.btn-md.edit-task
-            i.glyphicon.glyphicon-pencil
+        li.list-group-item Squad: #{player.squad}
         .actions.pull-right
             button.btn.btn-danger.btn-md.remove-player(data-id=player.id)
                 i.glyphicon.glyphicon-trash

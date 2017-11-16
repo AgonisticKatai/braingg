@@ -6,7 +6,7 @@ function getPlayers() {
 
 let counter = 10;
 
-function addPlayer(name, age, location, nickname, twitter, role) {
+function addPlayer(name, age, location, nickname, twitter, role, squad) {
   const newPlayer = {
     name,
     age, 
@@ -14,6 +14,7 @@ function addPlayer(name, age, location, nickname, twitter, role) {
     nickname, 
     twitter, 
     role, 
+    squad,
     id: counter+1
   }
   counter = newPlayer.id+1

@@ -1,0 +1,23 @@
+[
+	{
+		"title": "New Jersey",
+		"intro": "Come and see the new official brain gaming jersey",
+		"img": "./reference/default-user.png",
+		"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste est pariatur, ratione molestias nisi ea fugit dolore error ipsa. Nostrum exercitationem facere praesentium doloribus libero quod ipsa ullam laudantium explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ducimus? Aliquid pariatur facere illum mollitia corrupti veritatis, qui, sit, iste dolores optio maiores. Minus, tenetur aut obcaecati ratione necessitatibus illo!",
+		"id": 1
+	},
+	{
+		"title": "New Headset",
+		"intro": "Come and see the new official brain gaming jersey",
+		"img": "./reference/default-user.png",
+		"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste est pariatur, ratione molestias nisi ea fugit dolore error ipsa. Nostrum exercitationem facere praesentium doloribus libero quod ipsa ullam laudantium explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ducimus accusantium temporibus harum ipsum tempora perspiciatis autem rem quas iure rerum sapiente sed omnis voluptatibus eos aspernatur, molestias similique animi!",
+		"id": 2
+	},
+	{
+		"title": "New Mouse",
+		"intro": "Come and see the new official brain gaming jersey",
+		"img": "./reference/default-user.png",
+		"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste est pariatur, ratione molestias nisi ea fugit dolore error ipsa. Nostrum exercitationem facere praesentium doloribus libero quod ipsa ullam laudantium explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ratione soluta incidunt excepturi harum expedita necessitatibus debitis facilis dolores, veniam, odio rem exercitationem molestias tempora et non nobis perspiciatis quod.",
+		"id": 3
+	}
+]
