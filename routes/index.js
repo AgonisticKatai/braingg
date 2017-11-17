@@ -16,8 +16,8 @@ const passport = require('../server/config/passport')
 
 const router = express.Router()
 
-router.get('/admin', passport.authenticate('jwt', { session: false }), showHomeAdmin)
-// router.get('/', showHomeAdmin)
+// router.get('/admin', passport.authenticate('jwt', { session: false }), showHomeAdmin)
+router.get('/', showHomeAdmin)
 router.get('/squads', showSquadsAdmin)
 router.get('/squads/:squad', showPlayersSquadAdmin)
 
