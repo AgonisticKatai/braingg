@@ -1,3 +1,5 @@
+require('dotenv').load()
+
 const express = require('express')
 
 const showPlayers = require('./handlers/showPlayers')
@@ -10,10 +12,12 @@ const addNews = require('./handlers/addNews')
 const showNews = require('./handlers/showNews')
 const showFormNews = require('./handlers/showFormNews')
 
+const passport = require('../server/config/passport')
+
 const router = express.Router()
 
-router.get('/', showHomeAdmin)
-
+router.get('/admin', passport.authenticate('jwt', { session: false }), showHomeAdmin)
+// router.get('/', showHomeAdmin)
 router.get('/squads', showSquadsAdmin)
 router.get('/squads/:squad', showPlayersSquadAdmin)
 
