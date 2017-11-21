@@ -12,13 +12,13 @@ const addNews = require('./handlers/addNews')
 const showNews = require('./handlers/showNews')
 const showFormNews = require('./handlers/showFormNews')
 
+const showHome = require('./handlers/showHome')
+
 const passport = require('../server/config/passport')
 
 const router = express.Router()
 
-router.get('/', (req, res) => {
-	res.render('home')
-})
+router.get('/', showHome)
 
 // router.get('/admin', passport.authenticate('jwt', { session: false }), showHomeAdmin)
 router.get('/admin', showHomeAdmin)

@@ -1,4 +1,4 @@
-.body{
+.body {
 	background-color: grey;
 }
 
@@ -115,21 +115,15 @@ a, a:hover {
 	position: absolute;
 	top: 0px;
 	height: 100%;
-	width: 100%;
+	_width: 100%;
 	color: black;
+	overflow: hidden;
 }
 
-/*.image-news a{
-	visibility: hidden;
-	padding: 1%;
-}
-
-.image-news a:hover {
-	visibility: visible;
-}*/
 
 .image-news {
 	background-color: white;
+	overflow: hidden;
 }
 
 /*	@END NEWS	*/
@@ -219,9 +213,14 @@ a, a:hover {
   border-top: 4px solid #FF7B9D;
 }
 
-.menu-bottom a {
+.menu-bottom li a {
   color: white;
   font-size: 15px;
+  text-decoration: none;
+}
+
+.menu-bottom li a:hover {
+	color: #FF7B9D
 }
 
 /*	@END FOOTER	*/

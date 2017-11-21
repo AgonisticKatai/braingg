@@ -1,26 +1,14 @@
 .news
     .titulo-2
         h2 News
-        small Keep updated on our latests news!
+            small   Keep updated on our latests news!
     .row.container-fluid.center-news
-        .col-md-3.news1
-            .image-news
-                img.img-responsive(src="/img/camisetas.png" alt="new-1")
-            .text-news.hidden
-                h4 New-1
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum repellendus, quisquam temporibus quibusdam voluptatum
-            //- <a href="#"></a>
-        .col-md-3.news1
-            .image-news
-                img.img-responsive(src="/img/camisetas.png" alt="new-2")
-            .text-news.hidden
-                h4 New-2
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum repellendus, quisquam temporibus quibusdam voluptatum
-            //- <a href="#"></a>
-        .col-md-3.news1
-            .image-news
-                img.img-responsive(src="/img/camisetas.png" alt="new-3")
-            .text-news.hidden
-                h4 New-3
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum repellendus, quisquam temporibus quibusdam voluptatum
-            //- <a href="#"></a>
+        each item in news
+            .col-md-3.news1
+                .image-news
+                    img.img-responsive(src="/img/camisetas.png" alt="new-1")
+                    .text-news
+                        h4 #{item.title}
+                        p #{item.intro}
+                //- <a href="#"></a>
+        
