@@ -3,7 +3,7 @@ extends index
 block content
     .container
         h1.text-center Players
-        form.form.container(action='/players', method='POST')
+        form.form.container(action='/admin/players', method='POST')
             .form-group
                 label(for='name') Name:
                 input.form-control(type='text', name='name')

@@ -1,6 +1,6 @@
 const { Strategy: JwtStrategy, ExtractJwt } = require('passport-jwt')
 
-const User = require('../../../../models/User')
+const Player = require('../../../../models/Player')
 
 const { SECRET } = process.env
 //console.log(SECRET)

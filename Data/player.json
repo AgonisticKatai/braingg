@@ -1,3 +1,5 @@
+{
+"players": 
 [
 	{
 		"name": "Pol",
@@ -66,3 +68,4 @@
 		"squad": "csgo"
 	}
 ]
+}

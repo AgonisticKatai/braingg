@@ -18,20 +18,23 @@ const passport = require('../server/config/passport')
 
 const router = express.Router()
 
+//PUBLIC ROUTES
 router.get('/', showHome)
 
+
+//PRIVATE ROUTES
 // router.get('/admin', passport.authenticate('jwt', { session: false }), showHomeAdmin)
 router.get('/admin', showHomeAdmin)
-router.get('/squads', showSquadsAdmin)
-router.get('/squads/:squad', showPlayersSquadAdmin)
+router.get('/admin/squads', showSquadsAdmin)
+router.get('/admin/squads/:squad', showPlayersSquadAdmin)
 
-router.get('/news', showNews)
-router.post('/news', addNews)
+router.get('/admin/news', showNews)
+router.post('/admin/news', addNews)
 
-router.get('/addnews', showFormNews)
+router.get('/admin/addnews', showFormNews)
 
-router.get("/players", showPlayers)
-router.post("/players", addNewPlayer)
-router.delete("/players/:id", deletePlayer)
+router.get("/admin/players", showPlayers)
+router.post("/admin/players", addNewPlayer)
+router.delete("/admin/players/:id", deletePlayer)
 
 module.exports = router
