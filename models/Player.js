@@ -11,6 +11,7 @@ const PlayerSchema = new Schema({
     twitter: String,
     role: String,
     squad: String,
+    createdAt: {type: Date, default: Date.now} // Puedes añadir la fecha de creación del jugador
 }, { collection })
 
 module.exports = mongoose.model('Player', PlayerSchema)

@@ -7,6 +7,7 @@ const NewSchema = new Schema({
     intro: String,
     img: String,
     body: String,
+    createdAt: {type: Date, default: Date.now} // Puedes añadir la fecha de creación
 }, { collection })
 
 module.exports = mongoose.model('New', NewSchema)
